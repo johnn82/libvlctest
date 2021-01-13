@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:vlc="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms"
+    x:Class="App5.MainPage"
+    BackgroundColor="Black">
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Label            
+            x:Name="InfoLabel"
+            Grid.Row="0"
+            Margin="0,32,0,0"
+            TextColor="White"
+        />
+
+        <!--<vlc:MediaPlayerElement
+            x:Name="VideoView"
+            Grid.Row="1"
+        />-->
+
+        <Button
+            Grid.Row="2"
+            Text="Take Video"
+            Clicked="TakeVideoButton_Clicked" />
+    </Grid>
+</ContentPage>
